@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gestion de stock s6", "Gestion de stock s6\Gestion de stock s6.csproj", "{894D2837-2E58-4632-8973-44619E90463A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{894D2837-2E58-4632-8973-44619E90463A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{894D2837-2E58-4632-8973-44619E90463A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{894D2837-2E58-4632-8973-44619E90463A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{894D2837-2E58-4632-8973-44619E90463A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {065577FE-8AFB-48FD-AAF5-B42720642A4B}
+	EndGlobalSection
+EndGlobal

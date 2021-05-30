@@ -82,53 +82,12 @@ namespace Gestion_de_stock_s6.PL
 
         }
 
-        private void FRM_Menu_MouseDown(object sender, MouseEventArgs e)
+
+        private void button5_Click(object sender, EventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel3_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void ReleaseCapture()
-        {
-            throw new NotImplementedException();
-        }
-
-        private void SendMessage(IntPtr handle, int v1, int v2, int v3)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel2_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            //afficher le formulaire de connexion
+            FRM_Connexion frmC = new FRM_Connexion();
+            frmC.ShowDialog();
         }
     }
 }

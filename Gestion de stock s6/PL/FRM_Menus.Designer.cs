@@ -67,8 +67,7 @@ namespace Gestion_de_stock_s6.PL
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(58, 450);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+
             // 
             // pnlBut
             // 
@@ -197,8 +196,7 @@ namespace Gestion_de_stock_s6.PL
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(742, 10);
             this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+
             // 
             // panel3
             // 
@@ -211,8 +209,6 @@ namespace Gestion_de_stock_s6.PL
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(742, 440);
             this.panel3.TabIndex = 2;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseDown);
             // 
             // pnlParamettrer
             // 
@@ -286,6 +282,7 @@ namespace Gestion_de_stock_s6.PL
             this.button5.TabIndex = 0;
             this.button5.Text = "Se Connecter";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button3
             // 
@@ -335,7 +332,7 @@ namespace Gestion_de_stock_s6.PL
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // FRM_Menu
+            // FRM_Menus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -345,10 +342,10 @@ namespace Gestion_de_stock_s6.PL
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FRM_Menu";
+            this.Name = "FRM_Menus";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_Menu";
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FRM_Menu_MouseDown);
+
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.pnlParamettrer.ResumeLayout(false);

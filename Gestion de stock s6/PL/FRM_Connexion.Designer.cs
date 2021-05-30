@@ -104,6 +104,7 @@ namespace Gestion_de_stock_s6.PL
             this.btnconnect.TabIndex = 4;
             this.btnconnect.Text = "Se Connecter";
             this.btnconnect.UseVisualStyleBackColor = false;
+            this.btnconnect.Click += new System.EventHandler(this.btnconnect_Click);
             // 
             // linkLabel1
             // 

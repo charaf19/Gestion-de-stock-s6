@@ -16,7 +16,7 @@ namespace Gestion_de_stock_s6
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PL.FRM_Connexion());
+            Application.Run(new PL.FRM_Menus());
         }
     }
 }

@@ -16,7 +16,19 @@ namespace Gestion_de_stock_s6.PL
         {
             InitializeComponent();
         }
-
+        //pour verifier les champs obligatoir 
+        string testobligatoire()
+        {
+            //si le nom d'utilisateur est vide
+            if (txtNom.Text =="" || txtNom.Text == "Nom d'Utilisateur") {
+                return "entrer un nom d'utilisateur valide";
+            }
+            //si l'utilisateur laisse le champ vide
+            if (txtMotdepasse.Text == "" || txtMotdepasse.Text == "Mot de passe")
+            {
+                return "Le mot de passe que vous avez entré est incorrecte";
+            }
+        }
         private void textBox1_Enter(object sender, EventArgs e)
         {
             if(txtNom.Text == "Nom d'Utilisateur")
@@ -65,6 +77,16 @@ namespace Gestion_de_stock_s6.PL
         private void btnquitter_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnconnect_Click(object sender, EventArgs e)
+        {
+            if (testobligatoire()==null)
+            {
+                MessageBox.Show("valide");
+            }
+
+            
         }
     }
 }

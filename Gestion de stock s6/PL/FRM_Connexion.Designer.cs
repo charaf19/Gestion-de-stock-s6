@@ -37,6 +37,7 @@ namespace Gestion_de_stock_s6.PL
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnquitter = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel1
@@ -133,12 +134,25 @@ namespace Gestion_de_stock_s6.PL
             this.panel3.Size = new System.Drawing.Size(405, 1);
             this.panel3.TabIndex = 9;
             // 
+            // btnquitter
+            // 
+            this.btnquitter.FlatAppearance.BorderSize = 0;
+            this.btnquitter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnquitter.Image = global::Gestion_de_stock_s6.Properties.Resources.cancel;
+            this.btnquitter.Location = new System.Drawing.Point(736, 12);
+            this.btnquitter.Name = "btnquitter";
+            this.btnquitter.Size = new System.Drawing.Size(32, 37);
+            this.btnquitter.TabIndex = 10;
+            this.btnquitter.UseVisualStyleBackColor = true;
+            this.btnquitter.Click += new System.EventHandler(this.btnquitter_Click);
+            // 
             // FRM_Connexion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(780, 330);
+            this.Controls.Add(this.btnquitter);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.linkLabel1);
@@ -167,5 +181,6 @@ namespace Gestion_de_stock_s6.PL
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btnquitter;
     }
 }

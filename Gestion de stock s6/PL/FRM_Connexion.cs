@@ -61,5 +61,10 @@ namespace Gestion_de_stock_s6.PL
         {
 
         }
+
+        private void btnquitter_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

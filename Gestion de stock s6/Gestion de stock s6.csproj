@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -82,11 +97,17 @@
     <Compile Include="Details_Commande.cs">
       <DependentUpon>DbStock.tt</DependentUpon>
     </Compile>
-    <Compile Include="PL\FRM_Menu.cs">
+    <Compile Include="PL\FRM_Connexion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PL\FRM_Menu.Designer.cs">
-      <DependentUpon>FRM_Menu.cs</DependentUpon>
+    <Compile Include="PL\FRM_Connexion.Designer.cs">
+      <DependentUpon>FRM_Connexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Menus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Menus.Designer.cs">
+      <DependentUpon>FRM_Menus.cs</DependentUpon>
     </Compile>
     <Compile Include="Produit.cs">
       <DependentUpon>DbStock.tt</DependentUpon>
@@ -96,8 +117,11 @@
     <Compile Include="Utilisateur.cs">
       <DependentUpon>DbStock.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="PL\FRM_Menu.resx">
-      <DependentUpon>FRM_Menu.cs</DependentUpon>
+    <EmbeddedResource Include="PL\FRM_Connexion.resx">
+      <DependentUpon>FRM_Connexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Menus.resx">
+      <DependentUpon>FRM_Menus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -107,6 +131,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EntityDeploy Include="DbStock.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -140,9 +165,39 @@
       <DependentUpon>DbStock.edmx</DependentUpon>
       <LastGenOutput>DbStock.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\cancel1.png" />
+    <None Include="Resources\minimize.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\locksmith.png" />
+    <None Include="Resources\log-out.png" />
+    <None Include="Resources\backup-copy.png" />
+    <None Include="Resources\cloud-computing1.png" />
+    <None Include="Resources\cloud-computing.png" />
+    <None Include="Resources\plug.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\menu.png" />
+    <None Include="Resources\profile.png" />
+    <None Include="Resources\diagram.png" />
+    <None Include="Resources\category.png" />
+    <None Include="Resources\shopping-cart-24.png" />
+    <None Include="Resources\output-onlinepngtools.png" />
+    <None Include="Resources\input-onlinepngtools.png" />
+    <None Include="Resources\Untitled-111.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BL\" />

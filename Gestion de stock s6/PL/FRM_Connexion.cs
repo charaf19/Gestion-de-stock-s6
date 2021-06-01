@@ -12,9 +12,12 @@ namespace Gestion_de_stock_s6.PL
 {
     public partial class FRM_Connexion : Form
     {
+        private dbStockContext db;
         public FRM_Connexion()
         {
             InitializeComponent();
+            // initialiser la base de donnee
+
         }
         //pour verifier les champs obligatoir 
         string testobligatoire()

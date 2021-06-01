@@ -29,6 +29,7 @@ namespace Gestion_de_stock_s6
         public virtual DbSet<Client> Clients { get; set; }
         public virtual DbSet<Commande> Commandes { get; set; }
         public virtual DbSet<Produit> Produits { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<Utilisateur> Utilisateurs { get; set; }
         public virtual DbSet<Details_Commande> Details_Commande { get; set; }
     }

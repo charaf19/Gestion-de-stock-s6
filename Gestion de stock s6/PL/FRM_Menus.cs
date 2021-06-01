@@ -16,8 +16,9 @@ namespace Gestion_de_stock_s6.PL
         public FRM_Menus()
         {
             InitializeComponent();
-            panel1.Size = new Size(186, 450);
+            
             pnlParamettrer.Visible = false;
+            panel1.Size = new Size(58, 450);
         }
         //desactiver le formulaire 
         public void desactiverForm()
@@ -65,12 +66,33 @@ namespace Gestion_de_stock_s6.PL
         private void btnproduit_Click(object sender, EventArgs e)
         {
             pnlBut.Top = btnproduit.Top;
+            if (!(panel4.Controls.Contains(USER_Liste_Produit.Instance)))
+            {
+                panel4.Controls.Add(USER_Liste_Produit.Instance);
+                USER_Liste_Produit.Instance.Dock = DockStyle.Fill;
+                USER_Liste_Produit.Instance.BringToFront();
+            }
+            else
+            {
+                USER_Liste_Produit.Instance.BringToFront();
 
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             pnlBut.Top = btnclient.Top;
+            if (!panel4.Controls.Contains(USER_Liste_Clients.Instance))
+            {
+                panel4.Controls.Add(USER_Liste_Clients.Instance);
+                USER_Liste_Clients.Instance.Dock = DockStyle.Fill;
+                USER_Liste_Clients.Instance.BringToFront();
+            }
+            else
+            {
+                USER_Liste_Clients.Instance.BringToFront();
+
+            }
         }
 
         private void btncategorie_Click(object sender, EventArgs e)
@@ -100,14 +122,8 @@ namespace Gestion_de_stock_s6.PL
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-          if(  pnlParamettrer.Visible == true)
-            {
-                pnlParamettrer.Visible = false;
-            }
-            else
-            {
-                pnlParamettrer.Visible = true;
-            }
+            pnlParamettrer.Size = new Size(315, 199);
+            pnlParamettrer.Visible = !pnlParamettrer.Visible;
 
         }
 

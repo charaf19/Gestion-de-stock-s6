@@ -44,9 +44,10 @@ namespace Gestion_de_stock_s6.PL
             this.btndeconnecter = new System.Windows.Forms.Button();
             this.btnrestaurer = new System.Windows.Forms.Button();
             this.btnseconnecter = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.pnlParamettrer.SuspendLayout();
@@ -65,7 +66,7 @@ namespace Gestion_de_stock_s6.PL
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(58, 450);
+            this.panel1.Size = new System.Drawing.Size(189, 450);
             this.panel1.TabIndex = 0;
             // 
             // pnlBut
@@ -85,7 +86,7 @@ namespace Gestion_de_stock_s6.PL
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = global::Gestion_de_stock_s6.Properties.Resources.menu;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.Location = new System.Drawing.Point(14, 12);
+            this.button4.Location = new System.Drawing.Point(145, 12);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(33, 36);
             this.button4.TabIndex = 15;
@@ -191,21 +192,22 @@ namespace Gestion_de_stock_s6.PL
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(70)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(58, 0);
+            this.panel2.Location = new System.Drawing.Point(189, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(742, 10);
+            this.panel2.Size = new System.Drawing.Size(611, 10);
             this.panel2.TabIndex = 1;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.pnlParamettrer);
+            this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.button3);
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(58, 10);
+            this.panel3.Location = new System.Drawing.Point(189, 10);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(742, 440);
+            this.panel3.Size = new System.Drawing.Size(611, 440);
             this.panel3.TabIndex = 2;
             // 
             // pnlParamettrer
@@ -216,9 +218,9 @@ namespace Gestion_de_stock_s6.PL
             this.pnlParamettrer.Controls.Add(this.btndeconnecter);
             this.pnlParamettrer.Controls.Add(this.btnrestaurer);
             this.pnlParamettrer.Controls.Add(this.btnseconnecter);
-            this.pnlParamettrer.Location = new System.Drawing.Point(381, 232);
+            this.pnlParamettrer.Location = new System.Drawing.Point(180, 6);
             this.pnlParamettrer.Name = "pnlParamettrer";
-            this.pnlParamettrer.Size = new System.Drawing.Size(315, 196);
+            this.pnlParamettrer.Size = new System.Drawing.Size(315, 72);
             this.pnlParamettrer.TabIndex = 20;
             // 
             // btncopie
@@ -283,22 +285,6 @@ namespace Gestion_de_stock_s6.PL
             this.btnseconnecter.UseVisualStyleBackColor = true;
             this.btnseconnecter.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::Gestion_de_stock_s6.Properties.Resources.settings;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(696, 396);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(35, 32);
-            this.button3.TabIndex = 19;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -308,7 +294,7 @@ namespace Gestion_de_stock_s6.PL
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::Gestion_de_stock_s6.Properties.Resources.minimize;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(673, 6);
+            this.button2.Location = new System.Drawing.Point(542, 6);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(32, 32);
             this.button2.TabIndex = 18;
@@ -324,12 +310,38 @@ namespace Gestion_de_stock_s6.PL
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Gestion_de_stock_s6.Properties.Resources.cancel1;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(711, 6);
+            this.button1.Location = new System.Drawing.Point(580, 6);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(28, 32);
             this.button1.TabIndex = 17;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.Location = new System.Drawing.Point(3, 51);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(605, 361);
+            this.panel4.TabIndex = 21;
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = global::Gestion_de_stock_s6.Properties.Resources.settings;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.Location = new System.Drawing.Point(501, 4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(35, 32);
+            this.button3.TabIndex = 19;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // FRM_Menus
             // 
@@ -368,9 +380,10 @@ namespace Gestion_de_stock_s6.PL
         private System.Windows.Forms.Button btndeconnecter;
         private System.Windows.Forms.Button btnrestaurer;
         private System.Windows.Forms.Button btnseconnecter;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         public System.Windows.Forms.Button btnclient;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button3;
     }
 }

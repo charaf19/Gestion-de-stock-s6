@@ -60,6 +60,7 @@ namespace Gestion_de_stock_s6.PL
             this.txtNom.Size = new System.Drawing.Size(405, 20);
             this.txtNom.TabIndex = 1;
             this.txtNom.Text = "Nom d\'Utilisateur";
+            this.txtNom.TextChanged += new System.EventHandler(this.txtNom_TextChanged);
             this.txtNom.Enter += new System.EventHandler(this.textBox1_Enter);
             this.txtNom.Leave += new System.EventHandler(this.txtuser_Leave);
             // 

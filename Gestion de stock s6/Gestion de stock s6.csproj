@@ -110,11 +110,26 @@
     <Compile Include="PL\FRM_Menus.Designer.cs">
       <DependentUpon>FRM_Menus.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\USER_Liste_Clients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\USER_Liste_Clients.Designer.cs">
+      <DependentUpon>USER_Liste_Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\USER_Liste_Produit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\USER_Liste_Produit.Designer.cs">
+      <DependentUpon>USER_Liste_Produit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Produit.cs">
       <DependentUpon>DbStock.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>DbStock.tt</DependentUpon>
+    </Compile>
     <Compile Include="Utilisateur.cs">
       <DependentUpon>DbStock.tt</DependentUpon>
     </Compile>
@@ -123,6 +138,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_Menus.resx">
       <DependentUpon>FRM_Menus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\USER_Liste_Clients.resx">
+      <DependentUpon>USER_Liste_Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\USER_Liste_Produit.resx">
+      <DependentUpon>USER_Liste_Produit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -166,6 +187,11 @@
       <DependentUpon>DbStock.edmx</DependentUpon>
       <LastGenOutput>DbStock.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\picture.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\exchange.png" />
+    <None Include="Resources\add.png" />
     <None Include="Resources\cancel1.png" />
     <None Include="Resources\minimize.png" />
     <None Include="Resources\cancel.png" />

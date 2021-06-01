@@ -117,5 +117,10 @@ namespace Gestion_de_stock_s6.PL
 
             
         }
+
+        private void txtNom_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

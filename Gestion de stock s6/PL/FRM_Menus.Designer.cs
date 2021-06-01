@@ -40,10 +40,10 @@ namespace Gestion_de_stock_s6.PL
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pnlParamettrer = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btncopie = new System.Windows.Forms.Button();
+            this.btndeconnecter = new System.Windows.Forms.Button();
+            this.btnrestaurer = new System.Windows.Forms.Button();
+            this.btnseconnecter = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -67,7 +67,6 @@ namespace Gestion_de_stock_s6.PL
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(58, 450);
             this.panel1.TabIndex = 0;
-
             // 
             // pnlBut
             // 
@@ -196,7 +195,6 @@ namespace Gestion_de_stock_s6.PL
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(742, 10);
             this.panel2.TabIndex = 1;
-
             // 
             // panel3
             // 
@@ -214,75 +212,76 @@ namespace Gestion_de_stock_s6.PL
             // 
             this.pnlParamettrer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlParamettrer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(56)))), ((int)(((byte)(90)))));
-            this.pnlParamettrer.Controls.Add(this.button7);
-            this.pnlParamettrer.Controls.Add(this.button6);
-            this.pnlParamettrer.Controls.Add(this.button8);
-            this.pnlParamettrer.Controls.Add(this.button5);
+            this.pnlParamettrer.Controls.Add(this.btncopie);
+            this.pnlParamettrer.Controls.Add(this.btndeconnecter);
+            this.pnlParamettrer.Controls.Add(this.btnrestaurer);
+            this.pnlParamettrer.Controls.Add(this.btnseconnecter);
             this.pnlParamettrer.Location = new System.Drawing.Point(381, 232);
             this.pnlParamettrer.Name = "pnlParamettrer";
             this.pnlParamettrer.Size = new System.Drawing.Size(315, 196);
             this.pnlParamettrer.TabIndex = 20;
             // 
-            // button7
+            // btncopie
             // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button7.Image = global::Gestion_de_stock_s6.Properties.Resources.cloud_computing1;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(0, 45);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(324, 49);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Creer une copie de l\'app";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btncopie.FlatAppearance.BorderSize = 0;
+            this.btncopie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncopie.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncopie.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btncopie.Image = global::Gestion_de_stock_s6.Properties.Resources.cloud_computing1;
+            this.btncopie.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btncopie.Location = new System.Drawing.Point(0, 45);
+            this.btncopie.Name = "btncopie";
+            this.btncopie.Size = new System.Drawing.Size(324, 49);
+            this.btncopie.TabIndex = 2;
+            this.btncopie.Text = "Creer une copie de l\'app";
+            this.btncopie.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btndeconnecter
             // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button6.Image = global::Gestion_de_stock_s6.Properties.Resources.log_out;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 146);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(324, 49);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "Se déconnecter";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btndeconnecter.FlatAppearance.BorderSize = 0;
+            this.btndeconnecter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndeconnecter.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndeconnecter.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btndeconnecter.Image = global::Gestion_de_stock_s6.Properties.Resources.log_out;
+            this.btndeconnecter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btndeconnecter.Location = new System.Drawing.Point(0, 146);
+            this.btndeconnecter.Name = "btndeconnecter";
+            this.btndeconnecter.Size = new System.Drawing.Size(324, 49);
+            this.btndeconnecter.TabIndex = 1;
+            this.btndeconnecter.Text = "Se déconnecter";
+            this.btndeconnecter.UseVisualStyleBackColor = true;
+            this.btndeconnecter.Click += new System.EventHandler(this.btndeconnecter_Click);
             // 
-            // button8
+            // btnrestaurer
             // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button8.Image = global::Gestion_de_stock_s6.Properties.Resources.backup_copy;
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(0, 98);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(324, 49);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Restaurer une copie enregistrée";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnrestaurer.FlatAppearance.BorderSize = 0;
+            this.btnrestaurer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrestaurer.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnrestaurer.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnrestaurer.Image = global::Gestion_de_stock_s6.Properties.Resources.backup_copy;
+            this.btnrestaurer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnrestaurer.Location = new System.Drawing.Point(0, 98);
+            this.btnrestaurer.Name = "btnrestaurer";
+            this.btnrestaurer.Size = new System.Drawing.Size(324, 49);
+            this.btnrestaurer.TabIndex = 3;
+            this.btnrestaurer.Text = "Restaurer une copie enregistrée";
+            this.btnrestaurer.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnseconnecter
             // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button5.Image = global::Gestion_de_stock_s6.Properties.Resources.locksmith;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(324, 49);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Se Connecter";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnseconnecter.FlatAppearance.BorderSize = 0;
+            this.btnseconnecter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnseconnecter.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnseconnecter.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnseconnecter.Image = global::Gestion_de_stock_s6.Properties.Resources.locksmith;
+            this.btnseconnecter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnseconnecter.Location = new System.Drawing.Point(0, 2);
+            this.btnseconnecter.Name = "btnseconnecter";
+            this.btnseconnecter.Size = new System.Drawing.Size(324, 49);
+            this.btnseconnecter.TabIndex = 0;
+            this.btnseconnecter.Text = "Se Connecter";
+            this.btnseconnecter.UseVisualStyleBackColor = true;
+            this.btnseconnecter.Click += new System.EventHandler(this.button5_Click);
             // 
             // button3
             // 
@@ -345,7 +344,7 @@ namespace Gestion_de_stock_s6.PL
             this.Name = "FRM_Menus";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_Menu";
-
+            this.Load += new System.EventHandler(this.FRM_Menus_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.pnlParamettrer.ResumeLayout(false);
@@ -357,7 +356,6 @@ namespace Gestion_de_stock_s6.PL
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnclient;
         private System.Windows.Forms.Button btnutilisateur;
         private System.Windows.Forms.Button btncommande;
         private System.Windows.Forms.Button btncategorie;
@@ -366,12 +364,13 @@ namespace Gestion_de_stock_s6.PL
         private System.Windows.Forms.Panel pnlBut;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel pnlParamettrer;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btncopie;
+        private System.Windows.Forms.Button btndeconnecter;
+        private System.Windows.Forms.Button btnrestaurer;
+        private System.Windows.Forms.Button btnseconnecter;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button btnclient;
     }
 }

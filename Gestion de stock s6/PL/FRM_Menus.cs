@@ -19,7 +19,36 @@ namespace Gestion_de_stock_s6.PL
             panel1.Size = new Size(186, 450);
             pnlParamettrer.Visible = false;
         }
+        //desactiver le formulaire 
+        public void desactiverForm()
+        {
+            btncopie.Enabled = false;
+            btnclient.Enabled = false;
+            btnproduit.Enabled = false;
+            btncommande.Enabled = false;
+            btncategorie.Enabled = false;
+            btnutilisateur.Enabled = false;
+            btndeconnecter.Enabled = false;
+            btnrestaurer.Enabled = false;
+            pnlBut.Enabled = false;
 
+            btnseconnecter.Enabled = true;
+        }
+
+        public void activerForm()
+        {
+            btncopie.Enabled = true;
+            btnclient.Enabled = true;
+            btnproduit.Enabled = true;
+            btncommande.Enabled = true;
+            btncategorie.Enabled = true;
+            btnutilisateur.Enabled = true;
+            btndeconnecter.Enabled = true;
+            btnrestaurer.Enabled = true;
+            pnlBut.Enabled = true;
+            btnseconnecter.Enabled = false;
+            pnlParamettrer.Visible = false;
+        }
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -86,8 +115,20 @@ namespace Gestion_de_stock_s6.PL
         private void button5_Click(object sender, EventArgs e)
         {
             //afficher le formulaire de connexion
-            FRM_Connexion frmC = new FRM_Connexion();
+            FRM_Connexion frmC = new FRM_Connexion(this);//this refers to FRM_menu
             frmC.ShowDialog();
+            
+        }
+
+        private void FRM_Menus_Load(object sender, EventArgs e)
+        {
+            desactiverForm();
+        }
+
+        private void btndeconnecter_Click(object sender, EventArgs e)
+        {
+            desactiverForm();
+
         }
     }
 }

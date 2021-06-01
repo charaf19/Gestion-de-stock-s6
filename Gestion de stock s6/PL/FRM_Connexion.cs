@@ -13,12 +13,24 @@ namespace Gestion_de_stock_s6.PL
     public partial class FRM_Connexion : Form
     {
         private dbStockContext db;
-        public FRM_Connexion()
+
+        private Form frmmenu;
+        //class connexion
+        BL.CLS_Connexion C = new BL.CLS_Connexion();
+        public FRM_Connexion(Form Menu)
         {
             InitializeComponent();
             // initialiser la base de donnee
+            db = new dbStockContext();
+            this.frmmenu = Menu;
 
         }
+
+        public FRM_Connexion()
+        {
+        }
+
+
         //pour verifier les champs obligatoir 
         string testobligatoire()
         {
@@ -31,6 +43,8 @@ namespace Gestion_de_stock_s6.PL
             {
                 return "Le mot de passe que vous avez entré est incorrecte";
             }
+            //si l'utilisateur a entré son nom et son mot de passe 
+            return null;
         }
         private void textBox1_Enter(object sender, EventArgs e)
         {
@@ -86,7 +100,19 @@ namespace Gestion_de_stock_s6.PL
         {
             if (testobligatoire()==null)
             {
-                MessageBox.Show("valide");
+                if (C.ConnexionValide(db,txtNom.Text,txtMotdepasse.Text)==true)//utilisateur existe dans la base de donnees
+                {
+                    this.Close();
+                    (frmmenu as FRM_Menus).activerForm();
+                }
+                else//l'utilisateur n'existe pas on va ajouter un formulaire d'insription plutard
+                {
+                    MessageBox.Show("la Connexion a echoué", "Connexion", MessageBoxButtons.OK);
+                }
+            }
+            else
+            {
+
             }
 
             

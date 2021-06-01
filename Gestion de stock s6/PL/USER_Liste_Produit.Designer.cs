@@ -175,7 +175,7 @@ namespace Gestion_de_stock_s6.PL
             this.btnexcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnexcel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnexcel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnexcel.Image = global::Gestion_de_stock_s6.Properties.Resources.delete;
+            this.btnexcel.Image = global::Gestion_de_stock_s6.Properties.Resources.excel;
             this.btnexcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnexcel.Location = new System.Drawing.Point(515, 298);
             this.btnexcel.Name = "btnexcel";

@@ -110,11 +110,23 @@
     <Compile Include="PL\FRM_Menus.Designer.cs">
       <DependentUpon>FRM_Menus.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\USER_Liste_Categorie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\USER_Liste_Categorie.Designer.cs">
+      <DependentUpon>USER_Liste_Categorie.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\USER_Liste_Clients.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="PL\USER_Liste_Clients.Designer.cs">
       <DependentUpon>USER_Liste_Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\USER_Liste_Commandes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\USER_Liste_Commandes.Designer.cs">
+      <DependentUpon>USER_Liste_Commandes.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\USER_Liste_Produit.cs">
       <SubType>UserControl</SubType>
@@ -139,8 +151,14 @@
     <EmbeddedResource Include="PL\FRM_Menus.resx">
       <DependentUpon>FRM_Menus.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\USER_Liste_Categorie.resx">
+      <DependentUpon>USER_Liste_Categorie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\USER_Liste_Clients.resx">
       <DependentUpon>USER_Liste_Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\USER_Liste_Commandes.resx">
+      <DependentUpon>USER_Liste_Commandes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\USER_Liste_Produit.resx">
       <DependentUpon>USER_Liste_Produit.cs</DependentUpon>
@@ -187,6 +205,7 @@
       <DependentUpon>DbStock.edmx</DependentUpon>
       <LastGenOutput>DbStock.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\excel.png" />
     <None Include="Resources\printer.png" />
     <None Include="Resources\picture.png" />
     <None Include="Resources\delete.png" />

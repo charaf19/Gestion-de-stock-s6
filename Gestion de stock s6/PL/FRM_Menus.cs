@@ -98,11 +98,33 @@ namespace Gestion_de_stock_s6.PL
         private void btncategorie_Click(object sender, EventArgs e)
         {
             pnlBut.Top = btncategorie.Top;
+            if (!(panel4.Controls.Contains(USER_Liste_Categorie.Instance)))
+            {
+                panel4.Controls.Add(USER_Liste_Categorie.Instance);
+                USER_Liste_Categorie.Instance.Dock = DockStyle.Fill;
+                USER_Liste_Categorie.Instance.BringToFront();
+            }
+            else
+            {
+                USER_Liste_Categorie.Instance.BringToFront();
+
+            }
         }
 
         private void btncommande_Click(object sender, EventArgs e)
         {
             pnlBut.Top = btncommande.Top;
+            if (!(panel4.Controls.Contains(USER_Liste_Commandes.Instance)))
+            {
+                panel4.Controls.Add(USER_Liste_Commandes.Instance);
+                USER_Liste_Commandes.Instance.Dock = DockStyle.Fill;
+                USER_Liste_Commandes.Instance.BringToFront();
+            }
+            else
+            {
+                USER_Liste_Commandes.Instance.BringToFront();
+
+            }
         }
 
         private void btnutilisateur_Click(object sender, EventArgs e)

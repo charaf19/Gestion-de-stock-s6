@@ -108,12 +108,11 @@ namespace Gestion_de_stock_s6.PL
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.ImeMode = System.Windows.Forms.ImeMode.Alpha;
             this.comboBox2.Items.AddRange(new object[] {
+            "Id",
             "Nom",
-            "Prenom",
-            "Telephone",
-            "Email",
-            "Ville",
-            "Pays"});
+            "Quantité",
+            "Prix",
+            "Categorie"});
             this.comboBox2.Location = new System.Drawing.Point(84, 80);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(99, 28);
@@ -144,6 +143,8 @@ namespace Gestion_de_stock_s6.PL
             this.textBox1.TabIndex = 13;
             this.textBox1.Text = "Rechercher";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
+            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // panel1
             // 
